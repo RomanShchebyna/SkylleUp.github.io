@@ -1,0 +1,131 @@
+*{
+   
+    box-sizing: border-box;    
+    
+}
+body{
+    
+    display: inline-block;
+}
+
+ul{ 
+    margin: 10px 10px;
+    padding: 0px;
+    font-size: 20px;
+    color: grey;
+    width: 225px;
+    list-style: none;
+}
+
+[li*"text"]{
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+  a{
+    width: 130px;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+}
+.col-1 a{
+    background-color: #557543;
+    border: 1px solid #557543;
+}
+
+.col-2 a{
+    background-color:  #f7bd5c;
+    border: 1px solid  #f7bd5c;
+}
+.col-3 a{
+    background-color:  #ca4c4d;
+    border: 1px solid  #ca4c4d;
+}
+.col-4 a{
+    background-color:   #404eb1;
+    border: 1px solid   #404eb1;
+}
+
+
+
+
+
+.col-1  a:hover{
+background-color: white;
+color:#557543 ;
+}
+.col-2  a:hover{
+background-color: white;
+    color: #f7bd5c;
+    
+}
+.col-3  a:hover{
+background-color: white;
+color: #ca4c4d;
+}
+.col-4  a:hover{
+background-color: white;
+color: #404eb1;
+}
+
+li{
+    position: relative;
+}
+
+ .col-1 .color{
+    color: #557543;
+    font-size: 30px;
+}
+
+.col-2 .color{
+    color: #f7bd5c;
+    font-size: 30px;
+
+}
+.col-3 .color{
+    color: #ca4c4d;
+    font-size: 30px;
+
+}
+.col-4 .color{
+    color: #404eb1;
+    font-size: 30px;
+
+}
+
+
+li{
+    border-bottom:1px solid grey;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+ul:first-child{
+    border-top:1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+div{
+    display: inline-block;
+}
+
+body{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate3d(-50%, -50%, 0);
+}
