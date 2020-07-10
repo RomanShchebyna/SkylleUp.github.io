@@ -6,6 +6,7 @@
 body{
     
     display: inline-block;
+    /* text-align: center; */
 }
 
 ul{ 
@@ -123,9 +124,17 @@ div{
     display: inline-block;
 }
 
-body{
-    position: absolute;
-top: 50%;
-left: 50%;
-transform: translate3d(-50%, -50%, 0);
+/* @media (max-width: 425px){
+    .conteiner{
+        text-align: center;
+    }
+}
+*/
+@media (max-width: 768px){
+    .conteiner{
+        padding: 0px 129px 0px 129px;
+    }
+} 
+html{
+    text-align: center;
 }
