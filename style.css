@@ -3,18 +3,18 @@
     box-sizing: border-box;    
     
 }
-body{
+/* body{
     
-    display: inline-block;
+    /* display: inline-block; */
     /* text-align: center; */
-}
+} */
 
 ul{ 
-    margin: 10px 10px;
+    /* margin: 10px 10px; */
     padding: 0px;
     font-size: 20px;
     color: grey;
-    width: 225px;
+    
     list-style: none;
 }
 
@@ -81,9 +81,9 @@ background-color: white;
 color: #404eb1;
 }
 
-li{
+/* li{
     position: relative;
-}
+} */
 
  .col-1 .color{
     color: #557543;
@@ -105,14 +105,37 @@ li{
     font-size: 30px;
 
 }
+.conteiner::after {
+    clear: both;
+    display: block;
+    content: "";
+} 
 
+[class*="col-"]{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 270px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
 
 li{
     border-bottom:1px solid grey;
     text-align: center;
     padding: 20px;
+    list-style: none;
+    width: 100%;
     
 }
+
+[class*="col-"] li{
+    width: 100%;
+}
+
 
 ul:first-child{
     border-top:1px solid grey;
@@ -120,21 +143,29 @@ ul:first-child{
     border-right: 1px solid grey;
 }
 
-div{
+/* div{
     display: inline-block;
+} */
+
+
+.conteiner{
+    /* text-align: center; */
+    width: 1200px;
+    margin: 0 auto;
 }
 
-/* @media (max-width: 425px){
-    .conteiner{
-        text-align: center;
-    }
-}
-*/
-@media (max-width: 768px){
-    .conteiner{
-        padding: 0px 129px 0px 129px;
-    }
+/* ширина окна браузера больше   */
+@media (max-width:426px){
+   
+
 } 
-html{
+
+/* ширина окна браузера больше   */
+@media (min-width:1024px){
+   
+} 
+
+
+/* html{
     text-align: center;
-}
+} */
