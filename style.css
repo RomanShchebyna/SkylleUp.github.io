@@ -77,9 +77,7 @@ background-color: white;
 color: #404eb1;
 }
 
-/* li{
-    position: relative;
-} */
+
 
  .col-1 .color{
     color: #557543;
@@ -109,10 +107,8 @@ color: #404eb1;
 
 [class*="col-"]{
     float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    width: 300px;
+    padding: 10px;
+    width: 256px;
 }
 ul{
     margin: 0px;
@@ -139,29 +135,75 @@ ul:first-child{
     border-right: 1px solid grey;
 }
 
-/* div{
-    display: inline-block;
-} */
+
 
 
 .conteiner{
-    /* text-align: center; */
+  
     width: 1200px;
     margin: 0 auto;
+   
 }
 
 /* ширина окна браузера больше   */
-@media (max-width:426px){
-   
+@media (min-width:320px){
 
+   .conteiner{
+       min-width: 320px;
+       width: 320px
+       
+   } 
+   html{
+    text-align: center;
+}
+
+} 
+
+/* ширина окна браузера больше   */
+@media (min-width:768px){
+    .conteiner{
+        
+        width: 768px
+        
+    } 
+
+    .col-2,.col-4{
+        float: right;
+        
+    }
+    .col-1,.col-3{
+        margin-left: 128px;
+    }
+    .col-2,.col-4{
+        margin-right: 128px;
+    }
+
+   
 } 
 
 /* ширина окна браузера больше   */
 @media (min-width:1024px){
+    .conteiner{
+        
+        width: 1024px
+        
+    } 
+
+    .col-2,.col-4{
+        float: left;
+        
+    }
+    .col-1,.col-3{
+        margin-left: 0px;
+    }
+    .col-2,.col-4{
+        margin-right: 0px;
+        
+    }
+
    
 } 
 
 
-/* html{
-    text-align: center;
-} */
+
+
