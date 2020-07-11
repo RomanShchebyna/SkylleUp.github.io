@@ -4,6 +4,13 @@
     
 }
 
+body{
+    margin: 0 auto;
+    min-width: 320px;
+}
+/* html{
+    text-align: center;
+}  */
 
 ul{ 
     /* margin: 10px 10px; */
@@ -21,10 +28,7 @@ ul{
   
 }
 
-a{
-    text-decoration: none;
-    display: inline-block;
-}
+
   a{
     width: 130px;
     height: 40px;
@@ -34,7 +38,8 @@ a{
     line-height: 40px;
     font-size: 20px;
     font-weight: bold;
-    
+    text-decoration: none;
+    display: inline-block;
 
 }
 .col-1 a{
@@ -108,7 +113,9 @@ color: #404eb1;
 [class*="col-"]{
     float: left;
     padding: 10px;
-    width: 256px;
+    width: 100%;
+    
+
 }
 ul{
     margin: 0px;
@@ -142,6 +149,7 @@ ul:first-child{
   
     width: 1200px;
     margin: 0 auto;
+  
    
 }
 
@@ -150,14 +158,16 @@ ul:first-child{
 
    .conteiner{
        min-width: 320px;
-       width: 320px
-       
-   } 
-   html{
-    text-align: center;
-}
+       width: 320px;
+       margin:  0 auto;
+      
+   }
+   
+   
 
 } 
+
+
 
 /* ширина окна браузера больше   */
 @media (min-width:768px){
@@ -171,12 +181,22 @@ ul:first-child{
         float: right;
         
     }
+    
+
+    
+
+
+    [class*="col-"]{
+        width: 40%;
+
+    }
+
     .col-1,.col-3{
-        margin-left: 128px;
+margin-left: 10%;
     }
     .col-2,.col-4{
-        margin-right: 128px;
-    }
+        margin-right: 10%;
+            }
 
    
 } 
@@ -193,13 +213,14 @@ ul:first-child{
         float: left;
         
     }
-    .col-1,.col-3{
+    [class*="col-"]{
+        width: 25%;
         margin-left: 0px;
-    }
-    .col-2,.col-4{
         margin-right: 0px;
-        
+      
     }
+        
+   
 
    
 } 
